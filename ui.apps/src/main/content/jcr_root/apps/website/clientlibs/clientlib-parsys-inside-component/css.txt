@@ -1,0 +1,2 @@
+#base=css
+parsys-inside-component.css

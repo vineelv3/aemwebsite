@@ -1,0 +1,23 @@
+<div data-sly-use.model="website.core.models.MobileImpl"></div>
+
+<h1> ${model.brandname} </h1>
+
+==============Multifield with single field==============
+
+<div data-sly-list.item="${model.mobile}">
+
+------------Model : ${itemList.count}-----------------
+
+<p> Model : <b> ${item} </b> </p>
+
+</div>
+
+==============Using Map==========================
+
+<div data-sly-list.item="${model.mobileDetailsMap}">
+
+<p> Book : <b>${item.bookname} </p>
+<p> Suject : <b>${item.brandsubject}</p>
+<p> Publish : <b>${item.publishyear}</p>
+
+</div>
